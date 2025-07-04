@@ -6,3 +6,4 @@ __all__ = [
     "gaussian_scan_statistic",
     "bernoulli_scan_statistic",
 ]
+

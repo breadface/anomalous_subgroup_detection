@@ -3,30 +3,48 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "anomalous_subgroup_detection"
+name = "anomalous-subgroup-detection"
 version = "0.1.0"
 authors = [
-    { name = "Your Name", email = "your.email@example.com" },
+    { name = "Jesmine Omonori", email = "damilolao328@gmail.com" },
 ]
-description = "A package for detecting anomalous subgroups in data using scan statistics"
+description = "A Python library for detecting anomalous subgroups in data using subset scanning techniques"
 readme = "README.md"
 requires-python = ">=3.8"
+license = "MIT"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+keywords = ["anomaly-detection", "statistics", "data-analysis", "scan-statistics", "subgroup-detection"]
 dependencies = [
-    "numpy",
-    "pandas",
-    "scipy",
+    "numpy>=1.20.0",
+    "pandas>=1.3.0",
+    "scipy>=1.7.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest",
-    "pytest-cov",
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/breadface/anomalous_subgroup_detection"
+Repository = "https://github.com/breadface/anomalous_subgroup_detection"
+Documentation = "https://github.com/breadface/anomalous_subgroup_detection#readme"
+"Bug Tracker" = "https://github.com/breadface/anomalous_subgroup_detection/issues"
 
 [tool.setuptools]
 packages = ["anomalous_subgroup_detection"]
